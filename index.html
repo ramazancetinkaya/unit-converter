@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        
+        <div class="converter-container">
+            <div class="converter-header">
+                <select id="converter-type">
+                    <option value="area">Area</option>
+                    <option value="length">Length</option>
+                    <option value="temperature">Temperature</option>
+                    <option value="volume">Volume</option>
+                    <option value="mass">Mass</option>
+                    <option value="data">Data</option>
+                    <option value="speed">Speed</option>
+                    <option value="time">Time</option>
+                </select>
+            </div>
+            
+            <div class="converter-body">
+                <div class="input-group">
+                    <input type="number" id="input-value" placeholder="Enter value">
+                    <select id="input-unit"></select>
+                </div>
+                
+                <div class="swap-btn">
+                    <button id="swap-units"><i class="fas fa-exchange-alt"></i></button>
+                </div>
+                
+                <div class="input-group">
+                    <input type="number" id="output-value" readonly>
+                    <select id="output-unit"></select>
+                </div>
+            </div>
+            
+            <div class="converter-footer">
+                <button id="convert-btn">Convert</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+        </div>
+        
+        <!-- Copyright Footer -->
+        <div class="copyright-footer">
+            <p>&copy; 2025 Ramazan Çetinkaya. All Rights Reserved.</p>
+        </div>
+        
+        <!-- Toast Notification -->
+        <div id="toast" class="toast"></div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
